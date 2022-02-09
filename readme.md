@@ -6,6 +6,8 @@
 - HTTP scheme force redirect to HTTPS.
 - Use of security headers to obtain **SSL A+ rank** on [Qualys SSL Labs](https://www.ssllabs.com/ssltest).
 
+![SSL A+ Rank](https://user-images.githubusercontent.com/95886750/153294194-54a28791-3b47-4b5c-a8d8-41eb86cce880.PNG "SSL A+ Rank")
+
 ## Requirements
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker-compose](https://docs.docker.com/compose/install/)

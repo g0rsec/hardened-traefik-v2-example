@@ -21,7 +21,7 @@ htpasswd -nbB username 'password'
 ```
 In *./config/traefik.toml* change email address used for ACME registration.  
 In *./docker-compose.yml* replace *domain.tld* to match personal domain configuration.  
-In *./docker-compose.yml* comment "*runtime: runsc* line if you dont wan't to use [gVisor](https://github.com/google/gvisor).
+In *./docker-compose.yml* comment *runtime: runsc* lines if you dont wan't to use [gVisor](https://github.com/google/gvisor).
 
 ## Deployment
 ```bash

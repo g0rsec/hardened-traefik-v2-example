@@ -9,6 +9,7 @@ services:
       - CONTAINERS=1
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    runtime: runsc # Comment this line if you don't want GVisor runtime
     networks:
       - socket-proxy
 
@@ -19,7 +20,7 @@ services:
     user: 1000:1000
     sysctls:
       net.ipv4.ip_unprivileged_port_start: 0
-    runtime: runc
+    runtime: runsc # Comment this line if you don't want GVisor runtime
     networks:
       - traefik-proxy
       - socket-proxy
